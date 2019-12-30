@@ -28,7 +28,7 @@ const updateRecords = async () => {
 
                 console.log(`Updating ${route.join(' | ')}`);
                 record.content = ip;
-                console.log(await client.dnsRecords.edit(zone.id, record.id, record));
+                await client.dnsRecords.edit(zone.id, record.id, record);
             }
         }
     }
@@ -37,6 +37,4 @@ const updateRecords = async () => {
 };
 
 process.on('uncaughtException', console.error);
-
-
-setInterval(updateRecords, config.updateInterval * 60 * 1000)
+setInterval(updateRecords, config.updateInterval * 60 * 1000);
