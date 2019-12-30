@@ -1,0 +1,9 @@
+{
+  "updateInterval": 5,
+  "cloudflare": {
+    "token": ""
+  },
+  "routes": [
+    ["btheo.com", "A", "btheo.com"]
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "cloudflare-dynamic-dns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cloudflare": "^2.7.0",
+    "i": "^0.3.6",
+    "npm": "^6.13.4",
+    "public-ip": "^4.0.0"
+  }
+}
